@@ -1,38 +1,178 @@
-.App {
-  text-align: center;
+body {
+    background: linear-gradient(90deg,
+            rgb(160, 190, 180) 0%,
+            rgb(121, 194, 176) 100%);
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* css form */
+Form {
+    padding-top: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(90deg,
+            rgb(208, 191, 79) 0%,
+            rgb(153, 168, 92) 100%);
+
+    /* border */
+    border-radius: 25px;
+    margin-bottom: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* css form group */
+.form-group {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    /* background: linear-gradient(90deg,
+            rgb(160, 190, 180) 0%,
+            rgb(121, 194, 176) 100%); */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.row {
+    display: flex;
+    flex-direction: row;
 }
 
-.App-link {
-  color: #61dafb;
+/* css label */
+Label {
+    font-size: 1.5em;
+    background: linear-gradient(90deg,
+            rgb(130, 176, 36) 0%,
+            rgb(61, 108, 151) 100%);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    padding: 0 25px;
+
+    /* border */
+    border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* css table */
+table {
+    /* border-collapse: collapse; */
+    width: 100%;
+    color: #588c7e;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: left;
+}
+
+th {
+    background-color: #588c7e;
+    color: white;
+    /* border */
+}
+
+table tr {
+    /* background-color: #009879;
+    display: flex;
+    padding: 16px;*/
+    text-align: center;
+
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    margin: 4px auto;
+    color: #fff;
+    background: linear-gradient(90deg,
+            rgba(255, 118, 20, 1) 0%,
+            rgba(255, 84, 17, 1) 100%);
+    padding: 10px;
+}
+
+
+table tr:nth-child(4n + 1) {
+    background: linear-gradient(90deg,
+            rgb(12, 235, 255) 0%,
+            rgba(155, 0, 250, 1) 100%);
+}
+
+table tr:nth-child(4n + 2) {
+    background: linear-gradient(90deg,
+            rgba(255, 12, 241, 1) 0%,
+            rgba(250, 0, 135, 1) 100%);
+}
+
+table tr:nth-child(4n + 3) {
+    background: linear-gradient(90deg,
+            rgba(20, 159, 255, 1) 0%,
+            rgba(17, 122, 255, 1) 100%);
+}
+
+/* css td */
+tr {
+    padding: 10px;
+    text-align: center;
+
+    border-radius: 25px;
+}
+
+/* css Button */
+
+
+/* CSS */
+Button {
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 0 0 25px 25px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+}
+
+Button:disabled {
+    pointer-events: none;
+    border-radius: 0 0 25px 25px;
+}
+
+Button:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+Button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+/* css error feedback */
+.error-feedback {
+    color: #f00;
+    font-size: 1em;
+    display: inline;
+    margin: 0;
+    padding: 0;
 }
